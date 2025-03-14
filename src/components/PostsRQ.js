@@ -9,7 +9,8 @@ const PostsRQ = () => {
         queryKey: ["posts"],
         queryFn: () => {
             return axios.get("http://localhost:8000/posts");
-        }
+        },
+        staleTime: 30 * 1000;
     })
 
     if (isLoading) {
