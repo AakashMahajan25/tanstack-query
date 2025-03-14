@@ -1,8 +1,9 @@
 import React from 'react'
+import PostsRQ from './components/PostsRQ'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div><PostsRQ /></div>
   )
 }
 
