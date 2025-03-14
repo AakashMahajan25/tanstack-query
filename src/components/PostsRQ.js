@@ -10,7 +10,8 @@ const PostsRQ = () => {
         queryFn: () => {
             return axios.get("http://localhost:8000/posts");
         },
-        staleTime: 30 * 1000;
+        staleTime: 30 * 1000,
+        refetchInterval: 1000,
     })
 
     if (isLoading) {
